@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StudentHouse</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media:'all', 'data-turbolinks-track': 'reload' %>
+
+
+
+
+   
+  </head>
+
+  <body>
+  <div id="bar-continer">
+        <div class="nav-project-name">
+        <img  src=<%= image_url('studentHome0.1.png') %> alt="Flag and name of website"/>
+        </div>
+        <div class="nav-list">
+        <ul class="nav-list">
+            <li ><a class="nav-button" href="<%= departments_path %>">Home</a></li>
+            <li ><a class="nav-button"href="#ABOUT">About</a></li>
+            <li ><a class="nav-button" href="#Contact">Contact</a></li>
+            </ul>
+        </div>                                                                                 
+    </div>
+
+
+
+    <%= yield %>
+  </body>
+</html>

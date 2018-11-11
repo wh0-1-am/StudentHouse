@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= @department.name %></title>
+     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media:'all', 'data-turbolinks-track': 'reload' %>
+
+
+    </head>
+<body>
+    
+    <% @semesters.each do |semester|  %>
+    <% if semester.semester_number == 0 %>
+    <% elsif semester.semester_number == 1 %>
+    <div class="biggestbox firstbox">
+            <h4><%=semester.name  %></h4>
+            <div class="bigbox">
+                <% @courses_array.each do |course| %>
+                <% if course.semester_id == semester.id %>
+                <div class="subbox">
+                <div class="sub1"><a href=<%=  content_path(course.id)%>><img class="img" src=<%= image_url("folder.png")%> style="width: 80px;"></a></div>
+                <div class="sub2"><a href=<%=  content_path(course.id)%>><h3><%= course.name %></h3></a></div>
+                </div>
+                <% end%>
+                <% end%>
+            </div>
+            </div>
+    <% else %>
+    <div class="biggestbox ">
+            <h4><%=semester.name  %></h4>
+            <div class="bigbox">
+                <% @courses_array.each do |course| %>
+                <% if course.semester_id == semester.id %>
+                <div class="subbox">
+                <div class="sub1"><a href=<%=  content_path(course.id)%>><img class="img" src=<%= image_url("folder.png")%> style="width: 80px;"></a></div>
+                <div class="sub2"><a href=<%=  content_path(course.id)%>><h3><%= course.name  %></h3></a></div>
+                </div>
+                <% end%>
+                <% end%>
+            </div>
+            </div>
+    <% end%>
+    
+     
+    <% end%>
+       
+    </body>
+
+</html>
