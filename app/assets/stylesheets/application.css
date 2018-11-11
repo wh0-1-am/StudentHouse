@@ -2,8 +2,8 @@
 
 
 body{
-    background-image: image("https://intense-chamber-90053.herokuapp.com/assets/images/bg.jpg");
-    /* background-image: url("bg.jpg"); */
+    /* background-image: image("bg.jpg"); */
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-repeat: repeat;
