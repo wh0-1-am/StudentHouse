@@ -26,15 +26,15 @@ div.col-1,div.col-2,div.col-3{
 .col-1{
     border: 5px solid white;
     
-    <!--background-image: url(images/a.png);->
+    /* <!--background-image: url(images/a.png);-> */
 }
 .col-2{
     border: 5px solid aqua;
-    <!--background-image: url(images/Screen%20Shot%202017-10-30%20at%2000.54.51.png);->
+    /* <!--background-image: url(images/Screen%20Shot%202017-10-30%20at%2000.54.51.png);-> */
 }
 .col-3{
     border: 5px solid black;
-   <!-- background-image: url(images/Screen%20Shot%202017-10-30%20at%2000.55.20.png);->
+   /* <!-- background-image: url(images/Screen%20Shot%202017-10-30%20at%2000.55.20.png);-> */
 }
 @media screen  and (max-width: 700px){
     .row{
@@ -44,7 +44,7 @@ div.col-1,div.col-2,div.col-3{
     }
     .col-1{
     border: 5px solid white;
-    <!--background-image: url(images/a.png);->
+    /* <!--background-image: url(images/a.png);-> */
 }
     div.col-1,div.col-2,div.col-3{
     width: 100%;
