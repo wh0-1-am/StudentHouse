@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # get "departments/show"
   # get "departments/new"
   # get "departments/edit"
-  root "departments/index"
+  root "departments#index"
   resources :departments
   resources :courses
   resources :semesters
