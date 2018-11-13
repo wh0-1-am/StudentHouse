@@ -3,6 +3,9 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @course = Course.find_by(id: params[:id])
+    @contents = @course.contents
+    @content = Content.new
   end
 
   def new

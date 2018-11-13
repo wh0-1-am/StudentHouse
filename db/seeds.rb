@@ -79,7 +79,7 @@ course_cs471 = Course.create(name: "CS471", description: "Web Technologies", dep
 
 Content.destroy_all
 file_cs181_0 = Content.create(name: course_cs181.description, file_type: "image", url_file: "http://images.com", is_hidden: 0)
-# file_cs101_0 = Content.create(name: course_cs101.description, file_type: "text", url_file: "http://images.com", is_hidden: 0)
+file_phys116 = Content.create(name: course_phys116.description, file_type: "text", url_file: "https://oggito.blob.core.windows.net/images/full/2017/5/serkanengin2.jpg", is_hidden: 0)
 # file_cs102_0 = Content.create(name: course_cs102.description, file_type: "video", url_file: "http://images.com", is_hidden: 1)
 
 # file_cs281_0 = Content.create(name: course_cs281.description, file_type: "pdf", url_file: "http://images.com", is_hidden: 1)
@@ -87,6 +87,7 @@ file_cs181_0 = Content.create(name: course_cs181.description, file_type: "image"
 # file_ce300_0 = Content.create(name: course_ce300.description, file_type: "pdf", url_file: "http://googl.com", is_hidden: 0)
 # connect the file to course
 file_cs181_0.courses << course_cs181
+file_phys116.courses << course_phys116
 # file_cs101_0.courses << course_cs101
 # file_cs102_0.courses << course_cs102
 # file_cs281_0.courses << course_cs281

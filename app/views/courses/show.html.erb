@@ -1,2 +1,42 @@
-<h1>Courses#show</h1>
-<p>Find me in app/views/courses/show.html.erb</p>
+<div class="container">
+
+<body>
+ 
+  <br>
+      <div class="container ">
+       <%= render partial: 'contents/form' %>
+       <div class="row_content">
+       
+            <% @contents.each do |content| %>
+               
+                <div class="col s2">
+                <div class="card">
+                <div class="card-image">
+                <img src="<%= content.url_file%>" >
+                 <% if content.file_type  %>
+                 <span class="card-title black"><%= content.file_type %></span>
+                <% else %>
+                <span class="card-title black">Unknown</span>
+                <% end %>
+                </div>
+
+                 <div class="card-content">
+                <% if content.name%>
+                 <p><%= content.name%></p>
+                <% else%>
+                 <p>No Name</p>
+                <% end%>
+               
+                </div>
+                <div class="card-action">
+                <a href="<%= content.url_file %>" download>Download</a>
+                </div>
+                </div>
+                </div>
+              
+            <% end%>        
+    
+    <!-- end container-->
+      </div>
+      </div>
+    </body>

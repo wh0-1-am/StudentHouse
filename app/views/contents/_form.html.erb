@@ -1,0 +1,26 @@
+
+
+
+
+
+<div class="container firstbox form_container ">
+<h4 class="firstbox" style="color:white">Add Contents</h4><br>
+<div class="file-field input-field ">
+<%= form_for @content do |f|%>
+        <%= hidden_field_tag "course_id", params[:id] %>
+        <div class="btn">
+        <%= f.label :FILE,class:"white-text" %>
+        <%= f.file_field :url_file, multiple: true %>
+        </div>
+
+        <div class="file-path-wrapper">
+        <input class="file-path validate " style="color:white"  type="text" placeholder="Upload one or more files">
+        </div>
+         <div class="btn">
+         <%= f.submit "Upload File" %>
+         </div>
+<% end%>
+</div>
+
+ </div>
+
